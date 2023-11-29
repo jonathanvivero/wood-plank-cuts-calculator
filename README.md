@@ -1,27 +1,14 @@
-# WpcCalc
+# Wood Plank Cuts Calculator
+A wood plank cuts calculator for carpenters and DIY projects
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.3.
+I'm an amateur carpenter, maker, DIYer, and make-it-with-my-own-hands lover. Sometimes I need wood for my furniture, in custom measurements, so commercial pieces are not an option. 
 
-## Development server
+The solution is buying an "industrial" size plank  and requesting some cuts to get your customized wood panels to build your project. 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+This application allows to set some parameters to get the breakdown of the resulting frames. The parameters are:
+- Plank size (Height, Width, Thickness)
+- Cut width (saw blade width)
+- Minimal security meassure. Under this measure, the cut won't be done. e.g. Leroy Merlin (Spain) has a minimum of 230 mm, so is not possible to get a piece of 220mm x 500mm.
+- Calculate splitting cut. This means that the app must take into account to group the panels so it could be a in a side of the group of panels that split the plank in 2 parts.
+  
+Then, the user add the size of each panel and automatically calculate the breakdown
