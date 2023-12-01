@@ -1,0 +1,8 @@
+<div class="wrapper">
+    <div class="label">Height x Width</div>
+    <div class="piece-values">
+        <p-inputNumber class="piece-value" [maxlength]="4" inputId="integeronly" [(ngModel)]="height"></p-inputNumber>
+        <p-inputNumber class="piece-value" [maxlength]="4" inputId="integeronly" [(ngModel)]="width"></p-inputNumber>
+    </div>
+    <p-button class="add-button" label="Add" (onClick)="OnAddClick"></p-button>
+</div>

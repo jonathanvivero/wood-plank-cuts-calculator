@@ -1,0 +1,32 @@
+<div class="param-wrapper">
+    <div class="title">Plank Size</div>
+    <div class="param-size">        
+        <div class="field">
+            <label class="label">Height</label>
+            <p-inputNumber class="value" (onInput)="OnInput($event)" inputId="integeronly" [(ngModel)]="params.plankSize.Height"></p-inputNumber>
+        </div>
+        <div class="field">
+            <label class="label">Width</label>
+            <p-inputNumber class="value" (onInput)="OnInput($event)" inputId="integeronly" [(ngModel)]="params.plankSize.Width"></p-inputNumber>
+        </div>
+        <div class="field">
+            <label class="label">Thickness</label>
+            <p-inputNumber class="value" (onInput)="OnInput($event)" inputId="integeronly" [(ngModel)]="params.plankSize.Thickness"></p-inputNumber>
+        </div>
+    </div>
+    <div class="title">Other options</div>
+    <div class="param-options">
+        <div class="field">
+            <label class="label">Saw blade thickness</label>
+            <p-inputNumber class="value" (onInput)="OnInput($event)" inputId="integeronly" [(ngModel)]="params.calculatorCutOptions.SawBladeThikness"></p-inputNumber>
+        </div>
+        <div class="field">
+            <label class="label">Cut splits the plank</label>
+            <p-inputSwitch (onChange)="OnMeasureChange()" [(ngModel)]="params.calculatorCutOptions.CutAlwaysSplitPlank"></p-inputSwitch>
+        </div>
+        <div class="field">
+            <label class="label">Units</label>
+            <p-dropdown [options]="unitList" (onChange)="OnMeasureChange()" [(ngModel)]="params.calculatorCutOptions.Unit" optionValue="Value" optionLabel="Name" [showClear]="true" placeholder="Select a Measurement Unit"></p-dropdown>
+        </div>
+    </div>
+</div>
